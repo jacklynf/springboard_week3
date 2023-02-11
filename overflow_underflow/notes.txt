@@ -1,0 +1,8 @@
+The 32-bit signed value decrements as intended since its range includes negative numbers. The unsigned value, however,
+exhibits underflow. The mental picture I have of this is the range of numbers in a circle as we discussed last week.
+When we decremented an unsigned data type that was set to 0, it could not become -1 since it does not include negative
+values in its range. Instead, it underflows from 0 to its maximum possible value, 2^32-1.
+
+Similarly for the 16-bit values, we saw overflow. The signed value was initialized at its max, so when we incremented
+it, it had nowhere to go but back around to its lowest possible value. The unsigned value behaved similarly, but instead
+of circling back to a negative number (which it is incapable of doing since it's unsigned), it circled back around to 0.

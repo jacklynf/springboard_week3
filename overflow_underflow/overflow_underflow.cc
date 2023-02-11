@@ -9,6 +9,8 @@ int main ()
     // CREATE SIGNED,UNSIGNED 32-BIT //
     // INTEGERS NAMED s,u AND        //
     // INITIALIZE THEM TO ZERO       //
+    int32_t s = 0;
+    uint32_t u = 0;
     ///////////////////////////////////
 
 
@@ -18,6 +20,8 @@ int main ()
 
     ///////////////////
     // DECREMENT s,u //
+    --s;
+    --u;
     ///////////////////
 
 
@@ -31,6 +35,8 @@ int main ()
     // CREATE SIGNED,UNSIGNED 16-BIT //
     // INTEGERS NAMED s,u AND        //
     // INITIALIZE THEM TO MAXIMUMS   //
+    int16_t s = 32767; // 2^(n-1)-1
+    uint16_t u = 65535; // 2^n-1
     ///////////////////////////////////
 
 
@@ -40,6 +46,8 @@ int main ()
 
     ////////////////////////
     // INCREMENT s,u HERE //
+    ++s;
+    ++u;
     ////////////////////////
 
 
