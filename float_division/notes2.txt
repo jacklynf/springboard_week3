@@ -1,0 +1,2 @@
+Again, I had to mindful to not divide by 0. But otherwise, float division appears
+to be properly representing the quotients of these small values.
