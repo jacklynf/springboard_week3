@@ -1,0 +1,5 @@
+Since this it integer division, we cannot represent decimal values. So, when dividing two ints, if there is
+a decimal quotient, the int will instead retain the floor value. For example, 1/2 = 0.5, but in integer division,
+the floor value is 0. Similiarly, 10/4 = 2.5, but in integer division, the floor value is 2. Hence why we see
+any number that's divided by a value larger than itself will equal 0 (which we see on the top diagonal of
+the output matrix).

@@ -10,13 +10,13 @@ int main ()
   //
 
   cout << setw(5) << "";
-  for (int32_t denom=1; denom<=10; ++denom) {
+  for (int32_t denom=-10; denom<=10; ++denom) {
     cout << setw(4) << showpos << denom;
   }
   cout << endl;
 
   cout << setfill('-') << setw(5) << "";
-  for (int32_t denom=1; denom<=10; ++denom) {
+  for (int32_t denom=-10; denom<=10; ++denom) {
     cout << setfill('-') << setw(4) << "";
   }
   cout << endl;
@@ -26,13 +26,17 @@ int main ()
   // Fill in the table rows.
   //
 
-  for (int32_t numer=1; numer<=10; ++numer)
+  for (int32_t numer=-10; numer<=10; ++numer)
   {
     cout << setw(3) << showpos << numer << ": ";
-    for (int32_t denom=1; denom<=10; ++denom)
+    for (int32_t denom=-10; denom<=10; ++denom)
     {
-      int32_t result = numer/denom;
-      cout << setw(4) << result;
+      if (denom == 0){
+        cout << " inf";
+        continue;
+      }
+    int32_t result = numer/denom;
+    cout << setw(4) << result;
     }
     cout << endl;
   }

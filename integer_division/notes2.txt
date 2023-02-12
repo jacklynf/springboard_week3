@@ -1,0 +1,4 @@
+Admittedly it did take me a minute to figure out why I was getting a "core dumped" error :') but when I
+decided to use my brain, I realized we were dividing by 0. So, I just created an if-statement to handle
+that situation. Then everything performed as expected, specifically thatperforming integer division 
+results in the results being rounded to floor values.
