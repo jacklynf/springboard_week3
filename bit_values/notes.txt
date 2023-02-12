@@ -1,0 +1,4 @@
+The output is pretty straightforward! When we toggled bit 3, we changed a 1 to a 0, effectively 
+subtracting 8 from x. Toggling it again turned the 0 back to a 1, which added 8 back to x. 
+When we cleared bit 7 we subtracted 128 from x. Finally, clearing bits 16
+to 31 subtracted 26955006476 from the current x value.
