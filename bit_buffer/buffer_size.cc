@@ -6,7 +6,19 @@ using namespace std;
 int32_t buffer_size (int32_t W, int32_t N)
 {
   /////////////////////////////
-  // IMPLEMENT FUNCTION HERE //
+  // IMPLEMENT FUNCTION HERE /
+  
+  // I could import cmath and use the ceil()
+  // function here, but I didn't think we were
+  // meant to import any libraries here
+
+  int32_t x;
+
+  if (N%W == 0)
+    x = N/W;
+  else
+    x = (N/W) + 1;
+  return x;
   /////////////////////////////
 
 }
