@@ -1,0 +1,6 @@
+This is what we talked about last week with precision. The mental picture you gave was to picture
+a number line. A float isn't capable of representing every value on the number line, just specific
+increments. So, I think what is happening here is the value 100,000,000 + 1 falls between the
+increments and therefore cannot be represented, so the float is representing the closest value.
+To test this theory, I tried changing all the floats to doubles and was able to represent
+100,000,001 in that way.
